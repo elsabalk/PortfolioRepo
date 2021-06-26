@@ -1,3 +1,4 @@
+/*This is the font/colors for entire html*/
 * {
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
@@ -6,30 +7,32 @@
   
 }
 
+/*This is padding, text alignment and width of the navigation bar*/
 .header {
     padding: 1%;
     text-align: start;
     width: 100%;
 }
 
+/*This is the alignment and font size for the h1 in the navigation bar*/
 .header h1 {
     display:inline-block;
     font-size: 50px;
 }
 
-
- 
+/*This is to put the navigation items in flexbox*/ 
 ul {
     display: flex;
     justify-content:flex-end;
 }
 
-
+/*This is the alignment of the navigation list items*/
 li {
     display: inline-block;
     list-style-type: none;
 }
 
+/*This is the values of the navigation list items*/
 a {
     display: inline;
     padding: 8px;
@@ -37,27 +40,20 @@ a {
     font-size: large;
 }
 
-/* mouse over link */
+/*This is to change the color of the nav bar list items upon hover*/
 a:hover {
     color: rgb(114, 112, 112);
 }
 
-
-
-
-
-
-
-
-
+/*This is properties of the hero image*/
 .hero_images {
     display: flex;
     justify-content: center;
     border-style: solid;
     border-color: black;
+}
 
-   }
-
+/*This is to wrap the main section images*/
 .work-images {
     display:flex;
     flex-wrap: wrap;
@@ -65,39 +61,32 @@ a:hover {
     justify-content: center;
     }
 
-/*.work-images { 
-        flex-grow: 2;
-}*/
-
+/*This is to enlarge images upon hover*/
 .work-images :hover {
     transform: scale(1.01);
 }
 
+/*This is the border styling for section images*/
 .work1, .work2, .work3, .work4, .work5 {
     border: 4px solid black;
     margin: 1%;
     padding: 7px;
 }
 
-
-
+/*This is to put work images in flexbox*/
 .box {
     display: flex;
     flex-wrap: wrap;
 }
 
-    @media all and (max-width: 600px) {
+/*This is to ensure content fits all media screens*/ 
+@media all and (max-width: 600px) {
   .box {
       flex-flow: column wrap;
   }
 }
 
-
-
-
-
-
-
+/*This is the alignment of the items for each section*/
 .article, .section, .footer {
     display: flex;
     justify-content: space-between;
@@ -106,11 +95,13 @@ a:hover {
     width: 100%;
 }
 
+/*This is to put each section in flexbox*/
 .about-me, .work, .contact {
     display: flex;
     flex-flow: row wrap;
 }
 
+/*This is the styling for each sections headers*/
 .about-me h2, .work h2, .contact h2 {
     border-style: solid;
     border-width: 0 4px 0 0;
@@ -119,15 +110,14 @@ a:hover {
     width: 10 px;
 }
 
+/*This is to align the content of the article and section*/
 .about-me p, .work p {
     margin: auto;
     padding: 2%;
+    font-weight: bold;
 }
 
-.contact li {
-    align-self: center;
-}
-
+/*This is to ensure footer content aligns on all media screens*/
 @media all and (max-width: 600px) {
     .footer {
         align-items: stretch;
@@ -135,11 +125,7 @@ a:hover {
         flex: 100%;
     }
 
-
-
-
-
-
-
-
-
+/*This is to align list items in the footer*/
+.contact li {
+    align-self: center;
+}
