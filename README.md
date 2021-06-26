@@ -28,4 +28,4 @@ Please go to the following url to view the deployed Portfolio page
 - https://elsabalk.github.io/PortfolioRepo/
 
 ## Portfolio Webpage
-![](.Assets/images/elsa_balkaran_web_screenshot)
+![](.Assets/images/elsa_balkaran_web_screenshot.jpeg)
