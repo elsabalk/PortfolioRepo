@@ -20,6 +20,11 @@
     font-size: 50px;
 }
 
+nav img {
+    border-radius: 50%;
+    margin-bottom: 2%;
+}
+
 /*This is to put the navigation items in flexbox*/ 
 ul {
     display: flex;
@@ -46,11 +51,13 @@ a:hover {
 }
 
 /*This is properties of the hero image*/
-.hero_images {
-    display: flex;
-    justify-content: center;
-    border-style: solid;
-    border-color: black;
+.black_bar {
+    border-top: 25px solid black;
+    margin: 0;
+}
+
+.about-me {
+    font-size: large;
 }
 
 /*This is to wrap the main section images*/
@@ -59,7 +66,8 @@ a:hover {
     flex-wrap: wrap;
     margin:2%;
     justify-content: center;
-    }
+    flex-direction:column;
+}
 
 /*This is to enlarge images upon hover*/
 .work-images :hover {
@@ -80,11 +88,17 @@ a:hover {
 }
 
 /*This is to ensure content fits all media screens*/ 
-@media all and (max-width: 600px) {
-  .box {
+@media all and (min-width: 480px) {
+  .box1 {
       flex-flow: column wrap;
   }
 }
+
+@media all and (max-width: 600px) {
+    .box {
+        flex-flow: column wrap;
+    }
+  }
 
 /*This is the alignment of the items for each section*/
 .article, .section, .footer {
